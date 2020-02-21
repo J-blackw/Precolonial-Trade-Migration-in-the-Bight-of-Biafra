@@ -14,8 +14,7 @@
 <body>
       <div id="mapid"></div>
       <script>
-        var map = L.map('mapid').setView ([ 8.32763671875,
-          4.95824687402805],1);
+        var map = L.map('mapid').setView ([ 8.32763671875, 4.95824687402805],1);
 
         L.tileLayer('http://geojson.io/#map=10/4.8159/8.6325').addTo(map);
         var marker =L.marker([4.95824687402805, 8.32763671875]).addTo(map);
