@@ -196,27 +196,26 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
   <section class="page-section bg-dark text-white">
     <div class="container text-center">
       <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+      <leaflet-map latitude="0.3516" longitude="102.304" zoom="6">
+          <leaflet-tilelayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" max-zoom="19">
+                Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contr.,
+                <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
+                Imagery © <a href="http://mapbox.com">Mapbox</a>
+          </leaflet-tilelayer>
 
+          <template is="dom-bind">
+            <iron-ajax url="demo-geojson.json" last-response="{{data}}" auto>
+            </iron-ajax>
+            <leaflet-geojson color="#FF0000" data="[[data]]"></leaflet-geojson>
+          </template>
+
+      </leaflet-map>
     </div>
   </section>
 
   <div id="mapid"></div>
-  <leaflet-map latitude="0.3516" longitude="102.304" zoom="6">
 
-      <leaflet-tilelayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" max-zoom="19">
-            Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contr.,
-            <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,
-            Imagery © <a href="http://mapbox.com">Mapbox</a>
-      </leaflet-tilelayer>
-
-      <template is="dom-bind">
-        <iron-ajax url="demo-geojson.json" last-response="{{data}}" auto>
-        </iron-ajax>
-        <leaflet-geojson color="#FF0000" data="[[data]]"></leaflet-geojson>
-      </template>
-
-  </leaflet-map>
 
   <!-- Contact Section -->
   <section class="page-section" id="contact">
