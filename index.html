@@ -196,35 +196,82 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
   <section class="page-section bg-dark text-white">
     <div class="container text-center">
       <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-      <head>
-     	<script type="text/javascript" src="../webcomponentsjs/webcomponents-lite.min.js"></script>
-         <link rel="import" href="leaflet-map.html">
-         <style>
-           html, body {
-             margin: 0;
-             height: 100%;
-           }
-           leaflet-map {  L.tileLayer('http://geojson.io/#map=10/4.8159/8.6325').addTo(map);
-             var marker =L.marker([4.95824687402805, 8.32763671875]).addTo(map);
-             height: 100%;
-           }
-         </style>
-       </head>
-       <body>
-         <leaflet-map fit-to-markers>
-           <leaflet-marker longitude="77.2" latitude="28.4">
-           </head>
-           <body>
-                 <div id="mapid"></div>
-                 <script>
-                   var map = L.map('mapid').setView ([ 4.9757, 8.3417],1);
+      <!DOCTYPE html>
+              <html>
+              <head>
+                  <title>Bootstrap Version</title>
+                  <meta charset="utf-8">
+                  <meta name"viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                  <link rel="stylesheet" href="css/style.css">
 
-                   L.tileLayer('http://geojson.io/#map=10/4.8159/8.6325').addTo(map);
-                   var marker =L.marker([4.95824687402805, 8.32763671875]).addTo(map);
-             </script>
-           </body>
-           </html>
-           
+
+                  <script type="text/javascript" src="js/uikit.js"></script>
+                  <script type="text/javascript" src="js/leaflet.js"></script>
+
+
+              </head>
+              <body>
+                <nav class ="navbar navbar-default navbar-fixed-top" role ="navigation">
+                           <a class="navbar-brand"  href="#"><img id ="logo" src="image/bootstrap.png">Bootstrap</a>
+
+
+                   <div class ="container-fluid">
+                       <div class ="navbar-header">
+                               <button type="button" class ="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                                   <span class="sr-only">Navigation</span>
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                               </button>
+
+
+
+                       </div>
+
+                       <div class ="collapse navbar-collapse" id ="navbar-collapse-main">
+                           <ul class ="nav navbar-nav navbar-right">
+                               <li><a class="active" href="#">Home</a></li>
+                               <li><a href="#">About</a></li>
+                               <li><a href="#">Services</a></li>
+                               <li><a href="#">Contact</a></li>
+
+                           </ul>
+
+                       </div>
+
+                   </div>
+               </nav>
+               <div class="padding" id ="map-container">
+          <div class="container">
+                  <div class ="row">
+                      <div class="col-md-4">
+                          <p>Lorem ipsum dolor sit amet, qui ea delenit qualisque, ne duo tollit dolore hendrerit. Exerci postulant eos at, has causae electram id. Legimus contentiones eum te, eos eligendi vituperata ad, no ferri offendit referrentur vis. Homero virtute habemus ad sed, nec ferri viris in. Te labore adolescens ius, his consulatu eloquentiam ea, mea nulla appareat dignissim an. Ei his magna expetenda, nihil copiosae quo ut, percipit insolens mea an.
+                          </p>
+
+
+                      </div>
+
+                      <div class ="col-md-8">
+
+                          <!--p>Lorem ipsum dolor sit amet, qui ea delenit qualisque, ne duo tollit dolore hendrerit. Exerci postulant eos at, has causae electram id. Legimus contentiones eum te, eos eligendi vituperata ad, no ferri offendit referrentur vis. Homero virtute habemus ad sed, nec ferri viris in. Te labore adolescens ius, his consulatu eloquentiam ea, mea nulla appareat dignissim an. Ei his magna expetenda, nihil copiosae quo ut, percipit insolens mea an.
+                          </p-->
+                          <div id="map"></div>
+
+                      </div>
+
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+          </body>
+          <script type="text/javascript" src="js/main.js"></script>
+          </html>
 
     </div>
   </section>
