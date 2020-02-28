@@ -197,6 +197,14 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
     <div class="container text-center">
       <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
 
+            <div id="mapid"></div>
+            <script>
+              var map = L.map('mapid').setView ([ 4.9757, 8.3417],1);
+
+              L.tileLayer('http://geojson.io/#map=10/4.8159/8.6325').addTo(map);
+              var marker =L.marker([4.95824687402805, 8.32763671875]).addTo(map);
+        </script>
+      
 
 
                       </div>
