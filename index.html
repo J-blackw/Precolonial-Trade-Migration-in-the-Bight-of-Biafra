@@ -195,7 +195,7 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
     <div class="container text-center">
       <h2 class="mb-4">MAP</h2>
 <div id="map" style="height: 600px"></div>
-mapbox://styles/blackj517/ck7q7nlfg0uhd1js7501b1shv 
+mapbox://styles/blackj517/ck7q7nlfg0uhd1js7501b1shv
 
   <!-- Contact Section -->
   <section class="page-section" id="contact">
@@ -241,9 +241,9 @@ mapbox://styles/blackj517/ck7q7nlfg0uhd1js7501b1shv
   <script src="js/creative.min.js"></script>
   <script type="text/javascript">
         var map = L.map('map').setView([42.731105, -84.475239], 17);
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'', {
-    attribution: '&copy; <a href="http://mapbox.com">Mapbox</a> simple streets;
-    id: 'blackj517.ck7q7nlfg0uhd1js7501b1shv',
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: '&copy; <a href="http://mapbox.com">Mapbox</a> simple streets',
+    id: 'blackj517/ck7q7nlfg0uhd1js7501b1shv',
 accessToken:'pk.eyJ1IjoiYmxhY2tqNTE3IiwiYSI6ImNrNzZod3N5ZjAxcHkzZHA3cWJpMHFjOTEifQ.CGt6M-6dbZnPFvKmXcrr5g'
 }).addTo(map);
 </script>
