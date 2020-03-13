@@ -31,9 +31,7 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin="">
       </script>
-      <style>
-      #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
-      </style>
+
 
 </head>
 
@@ -196,7 +194,8 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
   <section class="page-section bg-dark text-white">
     <div class="container text-center">
       <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-
+<div id="map" style="height: 500px"></div>
+mapbox://styles/blackj517/ck7q7nlfg0uhd1js7501b1shv
 
   <!-- Contact Section -->
   <section class="page-section" id="contact">
@@ -215,8 +214,8 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
           <div>+1 (02) 555-0149</div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
-          <img src="img/noun_Shirt.png" width=40%" />
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <img src="img/noun_Shirt.png" width="40%" />
+          <!-- Make sure to change the email address in anchor text AND the link below-->
           <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
         </div>
       </div>
@@ -240,6 +239,15 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+  <script type="text/javascript">
+        var map = L.map('map').setView([42.731105, -84.475239], 17);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: '&copy; <a href="http://mapbox.com">Mapbox</a> simple streets;
+    id: 'blackj517/ck7q7nlfg0uhd1js7501b1shv',
+accessToken: 'pk.eyJ1IjoiYmxhY2tqNTE3IiwiYSI6ImNrNzZod3N5ZjAxcHkzZHA3cWJpMHFjOTEifQ.CGt6M-6dbZnPFvKmXcrr5g'
+}).addTo(map);
+</script>
+
 
 </body>
 
