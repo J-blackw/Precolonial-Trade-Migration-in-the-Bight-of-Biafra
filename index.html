@@ -250,7 +250,9 @@ accessToken:'pk.eyJ1IjoiYmxhY2tqNTE3IiwiYSI6ImNrNzZod3N5ZjAxcHkzZHA3cWJpMHFjOTEi
 L.imageOverlay(keyUrl, keyLocation).addTo(memap);
 var locations = L.geoJSON(geoJSON).addTo(memap);
 
-var	point1 = new L.LatLng(-8.236003, -4.801907),
+//add line points
+
+var	    point1 = new L.LatLng(-8.236003, -4.801907),
 				point2 = new L.LatLng(-8.333594, -4.973946),
 				point3 = new L.LatLng(-1.340, -2.109),
 				point4 = new L.LatLng(-2.833, -1.999),
@@ -264,7 +266,22 @@ var	point1 = new L.LatLng(-8.236003, -4.801907),
 				point12 = new L.LatLng(-3.688, 9.382),
 				point13 = new L.LatLng(-3.75, 6.90),
 				point14 = new L.LatLng(-1.889, 7.0),
-			  point15 = new L.LatLng(-1.867, 9.975);
+	point15 = new L.LatLng(-1.867, 9.975);
+
+  //add PointLine arrays
+  			var	numericalPointList = [point1, point2, point3, point4, point5, point6, point7, point8, point9, point10, point11, point12, point13, point14, point15];
+
+  			//create PolyLines
+  			var	numericalPolyline = new L.Polyline(numericalPointList, {
+  					color: '#400d0d',
+  					weight: 3,
+  					opacity: 1,
+  					smoothFactor: 1
+  				});
+
+  			//add PolyLines
+  			numericalPolyline.addTo(memap);
+
 
 //add pins
 			var geoJSON = [
