@@ -246,23 +246,17 @@ The Cross River, measuring 304 miles, flows from the highlands of western Camero
     id: 'blackj517/ck7q7nlfg0uhd1js7501b1shv',
 accessToken:'pk.eyJ1IjoiYmxhY2tqNTE3IiwiYSI6ImNrNzZod3N5ZjAxcHkzZHA3cWJpMHFjOTEifQ.CGt6M-6dbZnPFvKmXcrr5g'
 }).addTo(map);
-L.control.mousePosition({lngFirst:false}).addTo(memap);
-			L.control.attribution().setPrefix(
-				'<a alt="A JS library for interactive maps" href="http://leafletjs.com" target="_blank">Leaflet</a>'
-			).addAttribution(
-				'Map Tile Imagery &copy; <a alt="Iron Crown Enterprise" href="http://ironcrown.com/middle-earth-role-playing/">Iron Crown Enterprises</a> | <a alt="Creative Commons" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a> | Compiled with <a alt="Mapbox" href="https://www.mapbox.com/" target="_blank">Mapbox Style Editor</a>'
-			).addTo(memap);
-//			L.imageOverlay(keyUrl, keyLocation).addTo(memap);
+
 L.imageOverlay(keyUrl, keyLocation).addTo(memap);
 var locations = L.geoJSON(geoJSON).addTo(memap);
 
 //add line points
 
-var	    point1 = new L.LatLng(-8.236003, -4.801907),
-				point2 = new L.LatLng(-8.333594, -4.973946),
-				point3 = new L.LatLng(-8.285494, -4.994169),
-				point4 = new L.LatLng(-8.325722, -4.978411),
-				point5 = new L.LatLng(-8.338838, -4.967949),
+var	    point1 = new L.LatLng( -8.236003,  4.801907),
+				point2 = new L.LatLng( -8.333594, 4.973946),
+				point3 = new L.LatLng(-8.285494, 4.994169),
+				point4 = new L.LatLng(-8.325722, 4.978411),
+				point5 = new L.LatLng(-8.338838, 4.967949),
 				point6 = new L.LatLng(-8.318061, 4.963329),
 				point7 = new L.LatLng(-8.294252, 4.808444),
 				point8 = new L.LatLng(-8.327208, 4.607054),
