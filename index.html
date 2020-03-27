@@ -262,7 +262,11 @@ var	    point1 = new L. LatLng( -8.236003,  4.801907),
 				point8 = new L. LatLng(-8.327208, 4.607054),
 				point9 = new L. LatLng(-8.305417, 4.956782),
 				point10 = new L. LatLng(-8.312327, 4.952635),
-
+				point11 = new L. LatLng(-3.688, 7.097),
+				point12 = new L. LatLng(-3.688, 9.382),
+				point13 = new L. LatLng(-3.75, 6.90),
+				point14 = new L. LatLng(-1.889, 7.0),
+	point15 = new L. LatLng(-1.867, 9.975);
 
   //add PointLine arrays
   			var	numericalPointList = [point1, point2, point3, point4, point5, point6, point7, point8, point9, point10, point11, point12, point13, point14, point15];
@@ -520,11 +524,126 @@ var	    point1 = new L. LatLng( -8.236003,  4.801907),
 						}
 					}
 				},
-
-
 				{
+					type: 'Feature',
+					geometry: {
+						type: 'Point',
+						coordinates: [7.097, -3.688]
+					},
+					properties: {
+						title: '<a href="https://gameofthrones.fandom.com/wiki/Elyria">Elyria </a>',
+						description: 'Andlrei arrived in Elyria with the intent of luring another victim. However, upon reading the Daily Elyria, he came was shocked to read that the Kings Landing investigators discussing attempts to find and arrest a man they labeled the Kings Landing Reaper. This was the first time investigators openly admitted they were searching for a single killer linked to numerous murders.',
+						url:'http://tolkiengateway.net/wiki/Tower_of_Cirith_Ungol',
+						image: 'img/loc-img/p13elyria.jpg',
 
+						icon: {
+							iconUrl: 'leaflet/images/IconKnife2.png',
+							iconSize: [25, 41], // size of the icon
+							iconAnchor: [3, 35], // point of the icon which will correspond to marker's location
+							popupAnchor: [0, -41], // point from which the popup should open relative to the iconAnchor
+							shadowURL: 'leaflet/images/marker-shadow.png',
+							shadowSize:   [41, 41], // size of shadow
+							shadowAnchor: [3, 35], // point of icon from which shadow casts
+							className: 'dot'
+						}
+					}
+				},
+				{
+					type: 'Feature',
+					geometry: {
+						type: 'Point',
+						coordinates: [9.32, -3.688]
+					},
+					properties: {
+						title: '<a href="https://gameofthrones.fandom.com/wiki/The_Wall">The Wall </a>',
+						description: 'In an attempt to stop his urge to kill and cannibalize, Andlrei took his trade goods to the Wall, a small town populated by monastic monks. ',
+						url:'http://tolkiengateway.net/wiki/Tower_of_Cirith_Ungol',
+						image: 'img/loc-img/p12thewall.jpg',
 
+						icon: {
+							iconUrl: 'leaflet/images/IconKnife2.png',
+							iconSize: [25, 41], // size of the icon
+							iconAnchor: [3, 35], // point of the icon which will correspond to marker's location
+							popupAnchor: [0, -41], // point from which the popup should open relative to the iconAnchor
+							shadowURL: 'leaflet/images/marker-shadow.png',
+							shadowSize:   [41, 41], // size of shadow
+							shadowAnchor: [3, 35], // point of icon from which shadow casts
+							className: 'dot'
+						}
+					}
+				},
+				{
+					type: 'Feature',
+					geometry: {
+						type: 'Point',
+						coordinates: [6.90, -3.75]
+					},
+					properties: {
+						title: '<a href="https://gameofthrones.fandom.com/wiki/Sathar" >Sathar </a>',
+						description: 'Andlrei, discontented at The Wall and in need of need of money, took his goods to Sathar. In Sathar he came across a newspaper which recounted Kings Landing investigators attempts to capture the Kings Landing Reaper.',
+						url:'http://tolkiengateway.net/wiki/Tower_of_Cirith_Ungol',
+						image: 'img/loc-img/p11sathar.jpg',
+
+						icon: {
+							iconUrl: 'leaflet/images/IconKnife2.png',
+							iconSize: [25, 41], // size of the icon
+							iconAnchor: [3, 35], // point of the icon which will correspond to marker's location
+							popupAnchor: [0, -41], // point from which the popup should open relative to the iconAnchor
+							shadowURL: 'leaflet/images/marker-shadow.png',
+							shadowSize:   [41, 41], // size of shadow
+							shadowAnchor: [3, 35], // point of icon from which shadow casts
+							className: 'dot'
+						}
+					}
+				},
+				{
+					type: 'Feature',
+					geometry: {
+						type: 'Point',
+						coordinates: [7.0, -1.889]
+					},
+					properties: {
+						title: '<a href="https://gameofthrones.fandom.com/wiki/White_Harbor">White Harbor </a>',
+						description: 'In White Harbor, Andlrei, lured Eva with the promise of employment to his White Harbor camp. There he stabbed and sliced Eva before journeying to Yunkai. Eva was found the next morning by a hunter. Clinging to life in the White Habor hospital, Eva provided a detailed description of Andlrei. She described him as frail man with coiffed hair. Bur what solidified her description was the scare on his left cheek and her recollection of the patterned fabric he had.',
+						url:'http://tolkiengateway.net/wiki/Tower_of_Cirith_Ungol',
+						image: 'img/loc-img/p14whiteh.jpg',
+
+						icon: {
+							iconUrl: 'leaflet/images/IconKnife2.png',
+							iconSize: [25, 41], // size of the icon
+							iconAnchor: [3, 35], // point of the icon which will correspond to marker's location
+							popupAnchor: [0, -41], // point from which the popup should open relative to the iconAnchor
+							shadowURL: 'leaflet/images/marker-shadow.png',
+							shadowSize:   [41, 41], // size of shadow
+							shadowAnchor: [3, 35], // point of icon from which shadow casts
+							className: 'dot'
+						}
+					}
+				},
+				{
+					type: 'Feature',
+					geometry: {
+						type: 'Point',
+						coordinates: [9.975, -1.867]
+					},
+					properties: {
+						title: '<a href="https://gameofthrones.fandom.com/wiki/Yunkai">Yunkai </a>',
+						description: 'In Yunkai, police were equipped with a detailed description of the Kings Landing Reaper. They arrested Andlrei, who proclaimed his innocence, and took him back to Kings Landing.  ',
+						url:'http://tolkiengateway.net/wiki/Tower_of_Cirith_Ungol',
+						image: 'img/loc-img/p15yunkai.png',
+
+						icon: {
+							iconUrl: 'leaflet/images/IconKnife2.png',
+							iconSize: [25, 41], // size of the icon
+							iconAnchor: [3, 35], // point of the icon which will correspond to marker's location
+							popupAnchor: [0, -41], // point from which the popup should open relative to the iconAnchor
+							shadowURL: 'leaflet/images/marker-shadow.png',
+							shadowSize:   [41, 41], // size of shadow
+							shadowAnchor: [3, 35], // point of icon from which shadow casts
+							className: 'dot'
+						}
+					}
+				}
 			];
 			locations.on('layeradd', function(e) {
 				var marker = e.layer,
